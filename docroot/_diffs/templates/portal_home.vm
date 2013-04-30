@@ -1,0 +1,22 @@
+##
+## DEFAULT GLOBE THEME
+## 
+## Author: Alex Kim
+## Last Edit Date: March 20, 2013
+##
+
+
+<div id="content">
+		
+		#if ($selectable)
+			$theme.include($content_include)
+		#else
+			$portletDisplay.recycle()
+
+			$portletDisplay.setTitle($the_title)
+
+			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+		
+</div>
+			

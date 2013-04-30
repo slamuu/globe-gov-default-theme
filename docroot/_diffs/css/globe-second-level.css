@@ -1,0 +1,17 @@
+/*
+ * second-level
+ */
+
+#level2PageContentBox {
+	width: 960px;
+	clear: both;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#level2PageContentBox h1 {
+	color: #3B7FC7;
+	font-size: 21px;
+	margin: 0;
+	padding: 10px 0 13px 0;
+}

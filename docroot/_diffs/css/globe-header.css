@@ -1,0 +1,19 @@
+/*
+ * header
+ */
+ 
+#banner {
+	height: 130px;
+	margin: 0 auto;
+	background: url(../images/banners/banner-earth-bkg.png) center no-repeat;
+}
+
+#header-content {
+	width: 980px;
+	margin: 0 auto;
+}
+
+#site-banner {
+	position: relative;
+	top: 10px;	
+}

@@ -1,0 +1,57 @@
+/*
+ * base
+ */
+body {
+	background: #FFF;
+	margin: 0;
+}
+
+#skip-to-content {
+	clip: rect(0, 0, 0, 0);
+	position: absolute;
+}
+
+/*
+ * layout
+ */
+#wrapper {
+	background: url(../images/layout/container_bg_high.jpg) center no-repeat;
+}
+
+#wrapper-content {
+	width: 980px;
+	margin: auto;
+	padding: 0;
+}
+
+#content-top {
+	width: 980px;
+	height: 9px;
+	background: url(../images/layout/content_bg_vtop.png) no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+#content-wrapper {
+	width: 980px;
+	background: url(../images/layout/content_bg_vtile.png) repeat-y;
+	min-height: 750px;
+	height: auto !important;
+	margin: 0;
+	padding: 0;
+}
+
+#content {
+	width: 980px;
+	background: url(../images/layout/content_bg_vglow.png) no-repeat;
+	margin: 0;
+	min-height: 750px;
+}
+
+#content-bottom {
+	width: 980px;
+	height: 9px;
+	background: url(../images/layout/content_bg_vbottom.png) no-repeat;
+	margin: 0;
+	margin-bottom: 5px;
+}

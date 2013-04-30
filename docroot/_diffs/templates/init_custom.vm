@@ -1,0 +1,12 @@
+##
+## DEFAULT GLOBE THEME
+## 
+## Author: Alex Kim
+## Last Edit Date: March 20, 2013
+##
+
+#set($layoutService = $serviceLocator.findService("com.liferay.portal.service.LayoutLocalService"))
+#set($GroupLocalService = $serviceLocator.findService("com.liferay.portal.service.GroupLocalService"))
+
+#set($nav_items = $layoutService.getLayouts($GroupLocalService.getGroup($company_id, "Guest").getGroupId(), false, $getterUtil.getLong("0")))
+

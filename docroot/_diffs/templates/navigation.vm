@@ -1,0 +1,80 @@
+
+
+<nav class="$nav_css_class" id="navigation">
+
+	<div id="mainnav">
+	<ul>
+		#foreach ($nav_item in $nav_items)
+			#if ($nav_item.isSelected())
+				<li class="selected">
+			#else
+				<li>
+			#end
+				<a 
+				#if ($layout.uuid == $nav_item.uuid || $selectedTopNavUUID == $nav_item.uuid)
+					class="on"
+				#else
+					#foreach ($parent in $layout.getAncestors())
+						#if ($parent.uuid == $nav_item.uuid)
+						class="on"
+						#end
+					#end
+				#end
+				
+				href="$portalUtil.getLayoutURL($nav_item, $themeDisplay, true)" $nav_item.getTarget()><span>$nav_item.getHTMLTitle($themeDisplay.getLanguageId())</span></a>
+	
+				#if ($nav_item.hasChildren())
+					<ul class="child-menu subnav">
+						#set ($subnav_count = 0)
+						
+						#foreach ($nav_child in $nav_item.getChildren())
+							#if (!$nav_child.hidden)
+								#set ($subnav_count = $subnav_count + 1)
+							#end
+						#end
+						
+						#set ($subnav_count_col1 = $subnav_count / 2 + ($subnav_count % 2))
+						
+						<div class="subnav_col_left">
+						#set ($subnav_current = 1)
+						
+						#foreach ($nav_child in $nav_item.getChildren())
+							#if (!$nav_child.hidden)
+								#if ($nav_child.isSelected())
+							<li class="selected">
+								#else
+							<li>
+								#end
+								<a href="$portalUtil.getLayoutURL($nav_child, $themeDisplay, true)" $nav_child.getTarget()>$nav_child.getHTMLTitle($themeDisplay.getLanguageId())</a>
+							</li>
+							
+								#if ($subnav_current == $subnav_count_col1)
+						</div>
+						<div class="subnav_col">
+								#end
+							
+								#set ($subnav_current = $subnav_current + 1)
+							#end
+						#end
+						
+						</div>
+					</ul>
+				#end
+				
+			</li>
+		#end
+	</ul>
+	
+	</div>	
+	
+	<div id="search_box">
+
+			<form id="SubmitSearch" action="/search-results?p_p_id=3&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_3_struts_action=%2Fsearch%2Fsearch" method="post">
+				<label class="label" for="search"></label>
+				<input class="text" name="_3_keywords" type="Text" id="search" value="Search" onfocus="if(this.value=='Search'){this.value='';}" onblur="if(this.value==''){this.value='Search';}">
+			</form>
+
+			<div id="search_arrow"><a href="#" onclick="document.forms['SubmitSearch'].submit();return false;">&nbsp;&nbsp</a></div>
+	</div>
+	
+</nav>

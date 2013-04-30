@@ -1,0 +1,114 @@
+##
+## DEFAULT GLOBE THEME
+## 
+## Author: Alex Kim
+## Last Edit Date: March 20, 2013
+##
+
+#set($page_title =  $the_title)
+
+#if ($layout.getGroup().name != "Guest")
+	#set($page_title =  $layout.getGroup().getDescriptiveName())
+#end
+
+<h1>$page_title</h1>
+
+	#set ($specialFirstNav = 0)
+	#set ($activeTabName = "")
+	
+	<div>SIZE::$layout.getAncestors().size()</div>
+	<div>NAME::$layout.getGroup().name</div>
+	<dvi>CHILDREN::$layout.getChildren()</div>
+	
+	 #if ($layout.getAncestors().size() >= 2 || $layout.getGroup().name != "Guest")
+		
+		#if ($layout.getGroup().name != "Guest")
+
+			#set($nav_items = $layoutService.getLayouts($layout.getGroupId(), false, $getterUtil.getLong("0")))
+			#if ($layout.getGroup().type == 3)
+				#set($nav_items = $layoutService.getLayouts($layout.getGroupId(), true, $getterUtil.getLong("0")))
+			#end
+			##set($nav_items = $layoutService.getLayouts($layout.getGroupId()))
+	
+			#set($left_nav_items = $layout.getChildren())
+			#if ($layout.getAncestors().size() > 0)
+				#set($root_item_index = $layout.getAncestors().size())
+				#set($root_item_index = $root_item_index - 1)
+				#set($left_nav_items = $layout.getAncestors().get($root_item_index).getChildren())	
+			#end
+			
+			#if ($nav_items.size() > 1)
+				<div id="tab_container">
+				<ul class="tabs">
+				#foreach ($nav_item in $nav_items)
+					#if (!$nav_item.hidden)
+					<li 
+					#if ($layout.uuid == $nav_item.uuid || $layout.getAncestors().get($root_item_index).uuid == $nav_item.uuid)
+					class="active_tab"
+					#else
+						#foreach ($parent in $layout.getAncestors())
+							#if ($parent.uuid == $nav_item.uuid)
+							class="active_tab"
+							#end
+						#end
+					#end
+					><a href="$portalUtil.getLayoutURL($nav_item, $themeDisplay, true)" $nav_item.getTarget()>$nav_item.getHTMLTitle($themeDisplay.getLanguageId())</a></li>
+					#end
+				#end
+				</ul>		
+				</div>
+			#else
+				#if ($nav_items.size() == 1)
+					 #set ($specialFirstNav = 1)
+					 #set ($specialFirstNavLayout = $nav_items)
+				#end
+			#end
+		#else
+
+			## if we are size 2, then we need OUR children
+			#if ($layout.getAncestors().size() == 2)
+				#set($left_nav_items = $layout.getChildren())
+			#end
+			#if ($layout.getAncestors().size() > 2)
+				#set ($root_item_index = $layout.getAncestors().size())
+				#set ($root_item_index = $root_item_index - 3)
+				#set ($left_nav_items = $layout.getAncestors().get($root_item_index).getChildren())	
+			#end
+
+			#set ($tab_root_item_index = 0)
+			#set ($tab_root_item_index = $layout.getAncestors().size())
+			#if ($tab_root_item_index >= 2)
+				#set ($tab_root_item_index = $tab_root_item_index - 2)
+			#end
+
+			#if ($layout.getAncestors().get($tab_root_item_index).getChildren().size() > 1)
+				<div id="tab_container">
+				<ul class="tabs">
+				#foreach ($nav_item in $layout.getAncestors().get($tab_root_item_index).getChildren())
+					#if (!$nav_item.hidden)
+					<li 
+					#if ($layout.uuid == $nav_item.uuid)
+					class="active_tab"
+					#else
+						#foreach ($parent in $layout.getAncestors())
+							#if ($parent.uuid == $nav_item.uuid)
+							class="active_tab"
+							#end
+						#end
+					#end
+					><a href="$portalUtil.getLayoutURL($nav_item, $themeDisplay, true)" $nav_item.getTarget()>$nav_item.getHTMLTitle($themeDisplay.getLanguageId())</a></li>
+					#end
+				#end
+				</ul>	
+				</div>	
+			#else
+				#if ($layout.getAncestors().get($tab_root_item_index).getChildren().size() == 1)
+					 #set ($specialFirstNav = 1)
+					 #set ($specialFirstNavLayout = $layout.getAncestors().get($tab_root_item_index).getChildren())
+				#end
+			#end		
+		#end		
+		
+	 
+	 #end	
+		

@@ -1,0 +1,122 @@
+##
+## DEFAULT GLOBE THEME
+## 
+## Author: Alex Kim
+## Last Edit Date: March 20, 2013
+##
+ <!DOCTYPE html>
+
+#parse ($init)
+
+<html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title - $company_name</title>
+
+	$theme.include($top_head_include)
+ 	
+## 	<script src="http://cdn.alloyui.com/2.0.0pr3/aui/aui-min.js"></script>
+</head>
+
+<body class="$css_class">
+
+$theme.include($body_top_include)
+
+#if ($is_signed_in)
+	#dockbar()
+#end
+	<a href="#main-content" id="skip-to-content">#language("skip-to-content")</a>
+
+<header id="banner" role="banner">
+
+	<div id="header-content">
+		<div id="site-banner">
+			<a id="header_logo" href="/"><img
+				src="$images_folder/header/GLOBE_logoOfficial.jpg" width="511" height="87"
+				hspace="0" vspace="0" border="0" alt="Logo - The Globe Program">
+			</a>
+		</div>
+	</div>
+
+	$taglibLiferay.runtime('bannerhomeportlet_WAR_globegovhomeportlet', '', '')
+	
+	#set ($VOID = $velocityPortletPreferences.reset())
+
+	#if ($update_available_url)
+		<div class="popup-alert-notice">
+			<a class="update-available" href="$update_available_url">#language("updates-are-available-for-liferay")</a>
+		</div>
+	#end
+	
+</header>
+	
+<div id="wrapper">
+
+	#if ($has_navigation || $is_signed_in)
+		#parse ("$full_templates_path/navigation.vm")
+	#end
+	
+	<div id="wrapper-content">
+		<div id="content-top"></div>
+		<div id="content-wrapper">	
+	
+		#if ($the_title == "Home")
+			#parse ("$full_templates_path/portal_home.vm")
+		#else
+			#parse ("$full_templates_path/portal_second_level.vm")
+		#end
+			
+			
+		</div>
+		<div id="content-bottom"></div>
+	</div>
+	
+	<div id="media_row">
+		<a href="/" class="small_text">The GLOBE Program</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/" class="small_text">Global Learning and Observations to Benefit the Environment</a>
+		   
+		<ul id="social_icons">
+			<li><a href="http://www.facebook.com/TheGLOBEProgram" class="facebook"><img src="$images_folder/footer/icon_fb.png" alt="Visit our Facebook Page" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>		
+		    <li><a href="http://twitter.com/GLOBEProgram/" class="twitter"><img src="$images_folder/footer/icon_twitter.png" alt="Follow us on Twitter" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>		    
+		    <li><a href="http://www.linkedin.com/company/the-globe-program/" class="twitter"><img src="$images_folder/footer/icon_linkedin.png" alt="LinkedIn" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>		    
+		    <li><a href="http://www.youtube.com/user/globeprogram/" class="youtube"><img src="$images_folder/footer/icon_youtube.png" alt="Watch GLOBE Tv" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>
+		</ul>
+	</div><!--- /media_row --->
+	
+	
+</div>
+
+<footer id="footer" role="contentinfo">
+    <div id="footer_content">
+    
+        <div id="sponsors_logos">
+			<ul id="sponsors_logos">			
+			    <li><a href="http://www.nasa.gov" title="National Aeronautics and Space Administration" target="_blank"><img src="$images_folder/footer/logo_nasa.png" alt="NASA" width="49" height="46" hspace="0" vspace="0" border="0"></a></li>
+			    <li><a href="http://www.noaa.gov" title="National Oceanic and Atmospheric Administration" target="_blank"><img src="$images_folder/footer/logo_noaa.png" alt="NOAA" width="40" height="46" hspace="0" vspace="0" border="0"></a></li>
+			    <li><a href="http://www.nsf.gov" title="National Science Foundation" target="_blank"><img src="$images_folder/footer/logo_nsf.png" alt="NOAA" width="46" height="46" hspace="0" vspace="0" border="0"></a></li>
+			    <li><a href="http://www.state.gov" title="U.S. Department of State" target="_blank"><img src="$images_folder/footer/logo_usdos.png" alt="U.S. DOS" width="42" height="46" hspace="0" vspace="0" border="0"></a></li>
+			</ul>
+		</div>
+		
+		<div id="managed-by">
+			Managed by:
+			<a href="http://www.ucar.edu" title="University Corporation for Atmospheric Research" target="_blank"><img src="$images_folder/footer/logo_ucar.png" alt="UCAR Community Programs" width="181" height="46" hspace="0" vspace="0" border="0"></a>
+		</div>
+		
+        <div id="footer-links">
+        	<a href="/about-globe/policies/privacy-policy">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/contact-globe">Contact GLOBE</a>
+        </div>
+        
+    </div>
+</footer><!--- /footer --->
+
+$theme.include($body_bottom_include)
+
+<script type="text/javascript">
+	AUI().use('viewport');
+</script>
+
+</body>
+
+$theme.include($bottom_include)
+
+</html>

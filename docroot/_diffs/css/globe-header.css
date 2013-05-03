@@ -3,9 +3,9 @@
  */
  
 #banner {
-	height: 130px;
+	width: 2400px;
+	height: 381px;
 	margin: 0 auto;
-	background: url(../images/banners/banner-earth-bkg.png) center no-repeat;
 }
 
 #header-content {

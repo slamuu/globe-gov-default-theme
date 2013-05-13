@@ -1,19 +1,9 @@
 /*
  * header
  */
- 
-#banner {
-	width: 2400px;
-	height: 381px;
-	margin: 0 auto;
-}
 
 #header-content {
 	width: 980px;
 	margin: 0 auto;
 }
 
-#site-banner {
-	position: relative;
-	top: 10px;	
-}

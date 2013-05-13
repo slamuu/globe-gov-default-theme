@@ -29,16 +29,11 @@ $theme.include($body_top_include)
 
 <header id="banner" role="banner">
 
-	<div id="header-content">
-		<div id="site-banner">
-			<a id="header_logo" href="/"><img
-				src="$images_folder/header/GLOBE_logoOfficial.jpg" width="511" height="87"
-				hspace="0" vspace="0" border="0" alt="Logo - The Globe Program">
-			</a>
-		</div>
-	</div>
-
-	$taglibLiferay.runtime('bannerhomeportlet_WAR_globegovhomeportlet', '', '')
+	#if ($the_title == "Home")
+		$taglibLiferay.runtime('bannerhomeportlet_WAR_globegovhomeportlet', '', '')
+	#else
+		$taglibLiferay.runtime('bannerportalportlet_WAR_globegovhomeportlet', '', '')
+	#end
 	
 	#set ($VOID = $velocityPortletPreferences.reset())
 

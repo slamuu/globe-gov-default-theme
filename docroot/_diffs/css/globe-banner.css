@@ -1,2 +1,37 @@
 
 
+#site-banner {
+	position: relative;
+}
+
+/*
+ * HOME
+ */
+#banner-home-wrapper {
+	height: 192px;	
+}
+
+#banner-home-content {
+	width: 980px;
+	border: 1px solid #ff0000;
+	margin: 0 auto;
+}
+
+/*
+ * PORTAL
+ */
+#banner-portal-wrapper {
+	height: 192px;	
+}
+
+#banner-portal-content {
+	width: 980px;
+	border: 1px solid #ff0000;
+	margin: 0 auto;
+}
+
+#banner-portal-globe {
+	width: 271px;
+	height: 130px;
+}
+

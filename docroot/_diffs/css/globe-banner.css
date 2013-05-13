@@ -1,37 +1,75 @@
-
-
-#site-banner {
-	position: relative;
-}
-
 /*
  * HOME
  */
 #banner-home-wrapper {
-	height: 192px;	
+	height: 380px;
 }
 
 #banner-home-content {
 	width: 980px;
-	border: 1px solid #ff0000;
+	height: 380px;
 	margin: 0 auto;
+}
+
+#banner-home-footer {
+	width: 390px;
+	height: 100px;
+	margin: 0 auto;
+	padding-left: 480px;
+	padding-right: 100px;
+}
+
+#banner-home-content #site-banner {
+	width: 484px;
+	height: 84px;
+	float: left;
+	position: relative;
+	z-index: 9;
+	margin-left: 11px;
+}
+
+#banner-home-content #language-login {
+	float: right;
+	padding: 10px;
+	position: relative;
+	z-index: 9;
+}
+
+#flash_globe {
+	width: 271px;
+	height: 130px;
+	position: absolute;
 }
 
 /*
  * PORTAL
  */
 #banner-portal-wrapper {
-	height: 192px;	
+	height: 132px;
 }
 
 #banner-portal-content {
 	width: 980px;
-	border: 1px solid #ff0000;
 	margin: 0 auto;
+}
+
+#banner-portal-content #site-banner {
+	width: 336px;
+	height: 65px;
+	float: left;
+}
+
+#banner-portal-content #language-login {
+	float: right;
+	padding: 10px;
+	position: relative;
+	z-index: 9;
 }
 
 #banner-portal-globe {
 	width: 271px;
 	height: 130px;
+	padding-top: 2px;
+	margin-left: 590px;
+	position: absolute;
 }
-

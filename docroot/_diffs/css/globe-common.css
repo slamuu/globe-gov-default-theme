@@ -1,0 +1,12 @@
+/*
+ * Common
+ */
+p,div,td,a {
+	font-size: 13px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a:link,a:visited {
+	color: #369;
+	text-decoration: none;
+}

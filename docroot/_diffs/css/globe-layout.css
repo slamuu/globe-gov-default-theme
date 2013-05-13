@@ -28,7 +28,7 @@ body {
 	width: 980px;
 	height: 9px;
 	background: url(../images/layout/content_bg_vtop.png) no-repeat;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 }
 
@@ -52,6 +52,6 @@ body {
 	width: 980px;
 	height: 9px;
 	background: url(../images/layout/content_bg_vbottom.png) no-repeat;
-	margin: 0;
+	margin: 0 auto;
 	margin-bottom: 5px;
 }

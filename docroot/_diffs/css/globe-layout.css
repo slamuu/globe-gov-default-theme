@@ -44,7 +44,7 @@ body {
 #content {
 	width: 980px;
 	background: url(../images/layout/content_bg_vglow.png) no-repeat;
-	margin: 0;
+	margin: 0 auto;
 	min-height: 750px;
 }
 

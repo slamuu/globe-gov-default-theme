@@ -2,7 +2,7 @@
  * media_row
  */
 #media_row {
-	width: 960px;
+	width: 970px;
 	height: 33px;
 	margin: auto;
 	position: relative;
@@ -35,6 +35,7 @@
  * footer
  */
 #footer {
+	width: 100%;
 	background: #000;
 	height: 65px;
 	font-size: 11pt;
@@ -43,7 +44,7 @@
 
 #footer_content {
 	background: #000;
-	width: 960px;
+	width: 970px;
 	height: 65px;
 	margin: auto;
 	line-height: 65px;

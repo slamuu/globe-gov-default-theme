@@ -5,12 +5,14 @@
 ## Last Edit Date: March 20, 2013
 ##
  <!DOCTYPE html>
+ 
 
 #parse ($init)
 
 <html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$w3c_language_id">
 
 <head>
+	<meta name="viewport" content="initial-scale=0.75" />
 	<title>$the_title - $company_name</title>
 
 	$theme.include($top_head_include)

@@ -2,11 +2,12 @@
  * HOME
  */
 #banner-home-wrapper {
+	min-width: 990px;
 	height: 380px;
 }
 
 #banner-home-content {
-	width: 980px;
+	width: 990px;
 	height: 380px;
 	margin: 0 auto;
 }
@@ -16,7 +17,7 @@
 	height: 100px;
 	margin: 0 auto;
 	padding-left: 480px;
-	padding-right: 105px;
+	padding-right: 115px;
 }
 
 #banner-home-content #site-banner {
@@ -45,11 +46,12 @@
  * PORTAL
  */
 #banner-portal-wrapper {
+	min-width: 990px;
 	height: 132px;
 }
 
 #banner-portal-content {
-	width: 980px;
+	width: 990px;
 	margin: 0 auto;
 }
 

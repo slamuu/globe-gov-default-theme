@@ -3,7 +3,7 @@
  */
 #navigation {
 	clear: both;
-	width: 970px;
+	width: 990px;
 	height: 42px;
 	font-size: 14px;
 	margin: auto;
@@ -13,7 +13,7 @@
 
 #mainnav {
 	float: left;
-	width: 790px;
+	width: 800px;
 	height: 30px;
 }
 
@@ -47,7 +47,7 @@
 	line-height: 30px;
 	list-style: none outside none;
 	margin: 5px 0;
-	padding: 1px 6px;
+	padding: 1px 8px;
 	text-align: left;
 	text-shadow: -1px 2px 5px #FFFFFF;
 }
@@ -58,7 +58,7 @@
 	-moz-box-shadow: 0px 0px 3px #888;
 	-webkit-box-shadow: 0px 0px 3px #888;
 	box-shadow: 0px 0px 3px #888;
-	padding: 0 6px;
+	padding: 0 8px;
 }
 
 #navigation a {

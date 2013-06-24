@@ -5,13 +5,39 @@
 ## Last Edit Date: March 20, 2013
 ##
 
-
-
 <div id="content">
 	<div id="level2PageContentBox">
 		
 		#parse ("$full_templates_path/portal_second_level_nav.vm")
 		
+		## Check if no tabs and sidebar
+		#if ($layout.getAncestors().get($tab_root_item_index).getChildren().size() == 1 && $left_nav_items.size() > 0)	
+			#set ($showChildren_l0 = 0)
+			#parse ("$full_templates_path/portal_second_sidebar.vm")
+		#end
+		
+		#if ($layout.getAncestors().size() >= 2 || $layout.getGroup().name != "Guest")
+	 	<div id="article_container">
+	 	#end
+		
+		#if ($left_nav_items.size() > 0)
+
+			#if ($layout.getAncestors().get($tab_root_item_index).getChildren().size() > 1 && $left_nav_items.size() > 0)	
+				#set ($showChildren_l0 = 0)
+				#parse ("$full_templates_path/portal_second_sidebar.vm")
+			#end
+		
+			##<div id="article">	
+			#if ($showChildren_l0 == 0)
+		<div id="articleNoLeftMenu">
+			#else
+		<div id="article">
+			#end
+		
+		#end
+		
+		<a name="maincontent"></a>
+
 		#if ($selectable)
 			$theme.include($content_include)
 		#else
@@ -20,6 +46,17 @@
 			$portletDisplay.setTitle($the_title)
 
 			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+
+		#if ($left_nav_items.size() > 0)	
+		</div>
+		#end
+		
+		<!--- don't delete this br --->
+		<br clear="all" />
+		
+		#if ($layout.getAncestors().size() == 2 || $layout.getGroup().name != "Guest")
+		</div><!--- /article_container --->
 		#end
 		
 	</div>

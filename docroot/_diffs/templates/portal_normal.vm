@@ -5,7 +5,6 @@
 ## Last Edit Date: March 20, 2013
 ##
  <!DOCTYPE html>
- 
 
 #parse ($init)
 
@@ -53,8 +52,9 @@ $theme.include($body_top_include)
 		#parse ("$full_templates_path/navigation.vm")
 	#end
 	
+	<br clear="all">
+	
 	<div id="wrapper-content">
-		<div id="content-top"></div>
 		<div id="content-wrapper">	
 	
 		#if ($the_title == "Home")
@@ -62,10 +62,11 @@ $theme.include($body_top_include)
 		#else
 			#parse ("$full_templates_path/portal_second_level.vm")
 		#end
-			
-			
+
 		</div>
-		<div id="content-bottom"></div>
+	
+		<br clear="all">
+	
 	</div>
 	
 	<div id="media_row">

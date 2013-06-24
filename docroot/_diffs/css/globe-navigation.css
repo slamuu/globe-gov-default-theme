@@ -4,7 +4,6 @@
 #navigation {
 	clear: both;
 	width: 990px;
-	height: 42px;
 	font-size: 14px;
 	margin: auto;
 	z-index: 100;
@@ -14,7 +13,6 @@
 #mainnav {
 	float: left;
 	width: 800px;
-	height: 30px;
 }
 
 #navigation ul {
@@ -29,9 +27,14 @@
 
 #navigation li,#navigation a {
 	display: inline-block;
-	color: #9c6840;
+	color: #8a98b3;
 	font-size: 14px;
 	font-weight: bold;
+}
+
+#navigation li a.on:link,#navigation  li a.on:visited,#navigation li a.on:hover
+{
+	color: #000;
 }
 
 .ie6 #navigation li,.ie7 #navigation li,.ie6 #navigation a,.ie7 #navigation a
@@ -46,8 +49,8 @@
 	float: left;
 	line-height: 30px;
 	list-style: none outside none;
-	margin: 5px 0;
 	padding: 1px 8px;
+	margin: 2px 0 0 0;
 	text-align: left;
 	text-shadow: -1px 2px 5px #FFFFFF;
 }
@@ -191,7 +194,7 @@ ul.subnav .subnav_col {
 	height: 30px;
 	background: url('../images/navigation/searchboxBg.png') no-repeat left
 		top;
-	margin: 10px 0;
+	margin: 6px 0 2px 0;
 }
 
 #SubmitSearch {

@@ -1,15 +1,22 @@
-
+##
+## DEFAULT GLOBE THEME
+## 
+## Author: Alex Kim
+## Last Edit Date: March 20, 2013
+##
 
 <nav class="$nav_css_class" id="navigation">
 
 	<div id="mainnav">
 	<ul>
 		#foreach ($nav_item in $nav_items)
-			#if ($nav_item.isSelected())
+			#if (!$nav_item.hidden)
+			
+				#if ($nav_item.isSelected())
 				<li class="selected">
-			#else
+				#else
 				<li>
-			#end
+				#end
 				<a 
 				#if ($layout.uuid == $nav_item.uuid || $selectedTopNavUUID == $nav_item.uuid)
 					class="on"
@@ -62,6 +69,7 @@
 				#end
 				
 			</li>
+			#end
 		#end
 	</ul>
 	

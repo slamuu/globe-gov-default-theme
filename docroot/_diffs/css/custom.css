@@ -5,11 +5,15 @@
  * Last Edit Date: March 20, 2013
  */
 
-@import url(globe-common.css);
-@import url(globe-layout.css);
-@import url(globe-header.css);
 @import url(globe-banner.css);
+@import url(globe-common.css);
+@import url(globe-datatables.css);
+@import url(globe-footer.css);
+@import url(globe-header.css);
+@import url(globe-layout.css);
+/*
+@import url(globe-mypage.css);
+*/
 @import url(globe-navigation.css);
 @import url(globe-second-level.css);
-@import url(globe-footer.css);
 

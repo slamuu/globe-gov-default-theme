@@ -114,9 +114,11 @@
 	color: #000 !important; /*color: #AF510B !important;*/
 }
 
+/*
 #level2PageContentBox #sidebar ul.menu_level2 li a {
 	color: #707D86 !important;
 }
+*/
 
 #level2PageContentBox #sidebar ul.menu_level2 li a.active_cat {
 	font-weight: bold;
@@ -449,8 +451,7 @@
 
 .contentDate {
 	font-weight: bold;
-	font-size: 11px;
-	padding-bottom: 10px;
+	font-size: 16px;
 	color: grey;
 }
 

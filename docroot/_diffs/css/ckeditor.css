@@ -1,705 +1,114 @@
-body {
-	font-family: "Myriad Pro", "Segoe UI", "Helvetica Neue", Arial,
-		sans-serif;
-	margin: 0px;
-}
-
-p {
-	margin-bottom: 1em;
-	margin-top: 0px;
-}
-
-.cke_skin_kama h1,.cke_show_borders h1 {
-	color: #3B7FC7 !important;
-	font-size: 21px;
-}
-/*#aui_3_2_0_12972 {
-	color: #3B7FC7 !important;
-    font-size: 21px;
-}*/
-.cke_skin_kama h2,.cke_show_borders h2 {
-	color: #AF510B !important;
-	font-size: 16px;
-	margin: 0px;
-	padding: 10px 0 0;
-}
-/*#aui_3_2_0_12972 {
-	color: #AF510B !important;
-    font-size: 16px;
-}*/
-.cke_skin_kama h3,.cke_show_borders h3 {
-	color: #000000;
-	font-size: 14px !important;
-}
-
-#container_repeat {
-	background: url(../images/container_repeat.jpg) repeat-x;
-	height: 805px;
-}
-
-#container {
-	background: url(../images/container_bg_high.jpg) center no-repeat;
-	height: 860px;
-}
-
-#content {
-	width: 990px;
-	/*height: 732px;*/
-	/*background: url(../images/content_bg_top.png) no-repeat;*/
-	background: url(../images/content_bg.png) repeat-y;
-	margin: auto;
-	/*left: -5px;*/
-	left: -5px;
-	/*margin-top: -716px;*/
-}
-
-#content_repeat {
-	width: 990px;
-	background: url(../images/content_bg_tile.jpg) repeat-y;
-	margin: auto;
-	left: -5px;
-}
-
-#navbar {
-	width: 990px;
-	/*height: 50px;*/
-	margin: auto;
-	z-index: 100;
-	position: relative;
-	clear: both;
-	font-size: 14px;
-	height: 25px;
-}
-
-ul.nav {
-	display: inline;
-	list-style-type: none;
-	/*line-height: 50px;
-	 margin-right: -600px; 
-	 margin: 0 0 0 -38px;
-	 _margin: 0 0 0 0px;
-	 margin: 0 0 0 0px;
-	 float: left;*/
-	position: relative;
-	z-index: 100;
-}
-
-ul.nav li {
-	text-align: left;
-	float: left;
-	list-style: none;
-	/*line-height: 50px;
-    margin-right: 20px;
-	 line-height: 38px;*/
-	padding: 0 8px 0 8px;
-	line-height: 30px;
-	margin: 5px 0 5px 0;
-	font-weight: bold;
-	color: #9c6840;
-	text-shadow: -1px 2px 5px #fff;
-}
-
-ul.nav li a:link,ul.nav li a:visited {
-	color: #9c6840;
-}
-
-ul.nav li a:hover {
-	color: #000000;
-}
-
-ul.nav li a.on:link,ul.nav li a.on:visited,ul.nav li a.on:hover {
-	color: #000000;
-}
-/*#search{
-    color: #93a5b9;
-    margin-right: 0px;
-}*/
-#search_box {
-	width: 176px;
-	/*height: 22px; margin-top: 2px;  margin-bottom: 10px; float: right;*/
-	background: url('../images/searchboxBg.png') no-repeat left top;
-}
-
-#search_arrow {
-	height: 22px;
-	margin-top: 8px;
-	margin-bottom: 10px;
-	float: left;
-	margin-left: -15px;
-	background: url('../images/search_arrow.png') no-repeat;
-}
-
-#SubmitSearch {
-	width: 176px;
-	margin: 0px;
-	padding: 0px;
-}
-
-#SubmitSearch label {
-	width: 0px;
-	float: left;
-	clear: left;
-	margin: 0px;
-	font-size: 14px;
-	padding-top: 4px;
-}
-
-#SubmitSearch input {
-	float: left;
-	clear: right;
-	color: #355981;
-	font-size: 13px;
-	width: 160px;
-	/*border-color: #B3B3B3; border-right-width: 1px; border-bottom-width: 1px;
-	border-style: solid; border-left-width: 0px; border-top-width: 0px;*/
-	border-width: 0px;
-	/*width: 176px; height: 22px;
-	background: url('../images/searchboxBg.png') no-repeat left top;*/
-	background-color: transparent;
-	padding: 2px 6px 2px 6px;
-	margin: 4px 3px 2px 3px;
-}
-
-html>body #SubmitSearch input {
-	margin: 3px;
-}
 /*
-a{
-    color: #c0644f;
-    text-decoration: none;
+ * Common
+ */
+body {
+	/*font-family: "Myriad Pro", "Segoe UI", "Helvetica Neue", Arial, sans-serif;*/
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0px;
 }
-a:visited{
-    color: #c0644f;
 
+p,div,td,a {
+	font-size: 13px;
+	font-family: Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
-*/
-ul.nav li a:hover {
-	color: #000;
+
+a:link,a:visited {
+	color: #369;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 .clearfloat {
 	clear: both;
 }
 
-#footer {
-	background: #000;
-	height: 60px;
+.aui-tab-active,.aui-tab-active a {
+	color: #FFF !important;
 }
 
-#footer_content {
-	width: 990px;
-	margin: auto;
-	line-height: 60px;
-}
-
-#media {
-	height: 30px;
-	line-height: 30px;
-	font-size: 11pt;
-	color: #5A6871;
-}
-
-a.small_text:link,a.small_text:visited,a.small_text:hover {
-	font-size: 11pt;
-	color: #5a6871;
-	text-decoration: none;
-}
-
-.footer_links {
-	float: right;
-	font-weight: lighter;
-	color: #CCEBFE;
-	font-size: 11px;
-}
-
-.footer_links a:link,.footer_links a:visited,.footer_links a:hover {
-	font-size: 11pt;
-	color: #CCEBFE;
-	text-decoration: none;
-}
-
-#media_row { /*height: 30px;
-    line-height: 30px;*/
-	line-height: 30px;
-	font-size: 11pt;
-	color: #5A6871;
-	clear: both;
-	width: 990px;
-	/*height: 50px;*/
-	margin: auto;
-	position: relative;
-	clear: both;
-}
-
-#social_icons {
-	list-style: none outside none;
-	float: right;
-	margin: 0px;
-	padding: 0px;
-	margin-top: 4px;
-}
-
-#social_icons li {
-	float: left;
-	margin-left: 3px;
-}
-
-#sponsors_logos {
-	list-style: none outside none;
-	float: left;
-	margin: 0px;
-	padding: 0px;
-	height: 65px;
-}
-
-#sponsors_logos li {
-	float: left;
-	margin-right: 14px;
-	margin-top: 6px;
-}
-
-#sponsors_logos li.managed-by {
-	padding-left: 60px;
-	line-height: 50px;
-}
-
-#sponsors_logos li.ucar {
-	padding-right: 15px;
-}
-
-a.small_text:link,a.small_text:visited,a.small_text:hover {
-	font-size: 11pt;
-	color: #5a6871;
-	text-decoration: none;
-}
-
-#level2PageContentBox h1 {
+h1 {
 	color: #3B7FC7;
 	font-size: 21px;
 	margin: 0px;
-	padding: 10px 0px 13px 0px;
+	padding: 4px 0px 13px 0px;
 }
 
-#level2PageContentBox h2 {
+h2 {
 	color: #000000;
-	font-size: 16px;
-	margin: 0px;
-	padding: 10px 0px 0px 0px;
+	font-size: 19px;
 }
 
-#level2PageContentBox h2 {
+h3 {
 	color: #000000;
-	font-size: 16px;
-	margin: 0px;
-	padding: 10px 0px 0px 0px;
+	font-size: 14px;
 }
 
-#level2PageContentBox #article_container h2,.orange,#one_col_middle h2 {
-	color: #af510b;
+h3 a:link,h3 a:visited {
+	color: #32659A;
+	font-size: 14px;
+	text-decoration: none;
 }
 
-#level2PageContentBox .journal-content-article .table {
-	border: 1px solid #bec1c6;
-	color: #537493;
-	padding: 5px;
-	float: left;
-	background: #fff;
-	margin-right: 25px;
-	margin-top: 15px;
+h3 a:hover {
+	text-decoration: underline;
 }
 
-#level2PageContentBox .journal-content-article tr {
-	background: #d7ecff;
+h4 {
+	color: #000000;
+	font-size: 13px;
 }
 
-#level2PageContentBox .journal-content-article tr.alt {
-	background: #f1f8fe;
+h4 a:link,h4 a:visited {
+	color: #32659A;
+	font-size: 13px;
+	text-decoration: none;
 }
 
-#level2PageContentBox .journal-content-article th {
-	background: #ddd49b;
-	color: #7a731b;
-	padding: 5px 10px 5px 10px;
-}
-
-#level2PageContentBox .journal-content-article td {
-	padding: 5px 10px 5px 10px;
-}
-
-#level2PageContentBox #sidebar ul.menu {
-	padding: 0px;
-}
-
-#level2PageContentBox .journal-content-article ol,#level2PageContentBox .journal-content-article ul,#level2PageContentBox .journal-content-article dl
-	{
-	margin-left: 25px;
-}
-
-.map_small #search_community_map {
-	display: none;
-}
-
-.map_small #community_map {
-	margin-top: 0px;
-	margin-left: 0px;
-}
-
-.groupType_User #p_p_id_orgdetailsportlet_WAR_globegovorgdetailsportlet_
-	{ /* width: 208px; */
-	
+h4 a:hover {
+	text-decoration: underline;
 }
 
 /*
-.groupType_User #p_p_id_56_INSTANCE_W0Kj_ {
-	width: 390px;
-	margin: 0px 15px 0px 15px;
-}
-*/
-.groupType_User .portlet-boundary_56_ {
-	margin: 0 15px;
-	width: 390px;
-}
-
-.groupType_User #column-1 .summary-container {
-	width: 175px;
-}
-
-.groupType_User #p_p_id_mynetworkportlet_WAR_globegovmynetworkportlet_ {
-	width: 175px;
-}
-
-.groupType_User #p_p_id_mygroups_WAR_globegovmygroupsportlet_,.groupType_User #p_p_id_2_WAR_socialnetworkingportlet_,.groupType_User #p_p_id_4_WAR_socialnetworkingportlet_
-	{
-	width: 240px;
-	margin-right: 15px;
-}
-
-#p_p_id_mygroups_WAR_globegovmygroupsportlet_ {
-	clear: both;
-	margin-bottom: 10px;
-}
-
-#p_p_id_2_WAR_socialnetworkingportlet_ {
-	margin-top: 20px;
-	clear: both;
-}
-
-#content_repeat {
-	-moz-box-shadow: 0 0 10px #888888 inset;
-	-webkit-box-shadow: 0 0 10px #888888 inset;
-	box-shadow: 0 0 10px #888888 inset;
-}
-
-/* portlet-boundary portlet-boundary_commonnewsportlet_WAR_globegovcmsportlet_ common-news-wrapper aui-dd-drop */
-
-/* news styling for org page */
-#column-4 .portlet-boundary_commonnewsportlet_WAR_globegovcmsportlet_ {
-	background-color: #F0F9FE;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #AEBECD;
-	margin-top: 30px;
-}
-
-#column-4 .portlet-boundary_commonnewsportlet_WAR_globegovcmsportlet_ h3
-	{
-	margin-top: -20px;
-}
-
-#column-4 .portlet-boundary_commonnewsportlet_WAR_globegovcmsportlet_ .news-image
-	{
-	margin: 0px 12px;
-}
-
-#column-4 .portlet-boundary_commonnewsportlet_WAR_globegovcmsportlet_ .news-image img
-	{
-	margin-right: 12px;
-}
-
-#column-4 .portlet-boundary_commonnewsportlet_WAR_globegovcmsportlet_ .news-title,#column-4 .portlet-boundary_commonnewsportlet_WAR_globegovcmsportlet_ a.news-title:link,#column-4 .portlet-boundary_commonnewsportlet_WAR_globegovcmsportlet_ a.news-title:visited
-	{
-	color: #32659A;
-	font-size: 14px;
-	font-weight: bold;
-	margin: 0px;
-	padding: 0px;
-	text-decoration: none;
-}
-
-#column-4 .portlet-boundary_commonnewsportlet_WAR_globegovcmsportlet_ a.news-title:hover
-	{
-	color: Black;
-}
-
-#column-4 .portlet-boundary_commonnewsportlet_WAR_globegovcmsportlet_ .news-date
-	{
-	color: #000000;
-	font-size: 12px;
-	font-weight: bold;
-	margin: 0px;
-	padding: 0px;
-}
-
-#column-4 .portlet-boundary_commonnewsportlet_WAR_globegovcmsportlet_ .archiveLink
-	{
-	margin-left: 12px
-}
-
-/* highlights styling for schools overview page*/
-#column-2 .portlet-boundary_commonhighlightsportlet_WAR_globegovcmsportlet_
-	{
-	background-color: #F0F9FE;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #AEBECD;
-	margin-top: 30px;
-}
-
-#column-2 .portlet-boundary_commonhighlightsportlet_WAR_globegovcmsportlet_ .highlights-item
-	{
-	margin-left: 7px;
-	margin-right: 7px;
-	margin-top: 13px;
-}
-
-#column-2 .portlet-boundary_commonhighlightsportlet_WAR_globegovcmsportlet_ h3
-	{
-	margin-top: -20px;
-}
-
-#column-2 .portlet-boundary_commonhighlightsportlet_WAR_globegovcmsportlet_ .highlights-title
-	{
-	color: #AF510B;
-	font-size: 14px;
-	font-weight: bold;
-	margin: 0px;
-	padding: 0px;
-	text-decoration: none;
-}
-
-#column-2 .portlet-boundary_commonhighlightsportlet_WAR_globegovcmsportlet_ a.highlights-title:link,#column-2 .portlet-boundary_commonhighlightsportlet_WAR_globegovcmsportlet_ a.news-highlights:visited
-	{
-	color: #32659A;
-	font-size: 14px;
-	font-weight: bold;
-	margin: 0px;
-	padding: 0px;
-	text-decoration: none;
-}
-
-#column-2 .portlet-boundary_commonhighlightsportlet_WAR_globegovcmsportlet_ a.highlights-title:hover
-	{
-	color: Black;
-}
-
-#column-2 .portlet-boundary_commonhighlightsportlet_WAR_globegovcmsportlet_ .highlights-date
-	{
-	color: #000000;
-	font-size: 12px;
-	font-weight: bold;
-	margin: 0px;
-	padding: 0px;
-}
-
-/* events styling for org page */
-#column-4 .portlet-boundary_commoneventsportlet_WAR_globegovcmsportlet_
-	{
-	background-color: #F0F9FE;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #AEBECD;
-	margin-top: 30px;
-}
-
-#column-4 .portlet-boundary_commoneventsportlet_WAR_globegovcmsportlet_ h3
-	{
-	margin-top: -20px;
-}
-
-#column-4 .portlet-boundary_commoneventsportlet_WAR_globegovcmsportlet_ .events-image
-	{
-	margin: 0px 12px;
-}
-
-#column-4 .portlet-boundary_commoneventsportlet_WAR_globegovcmsportlet_ .events-image img
-	{
-	margin-right: 12px;
-}
-
-#column-4 .portlet-boundary_commoneventsportlet_WAR_globegovcmsportlet_ .events-title,#column-4 .portlet-boundary_commoneventsportlet_WAR_globegovcmsportlet_ a.events-title:link,#column-4 .portlet-boundary_commoneventsportlet_WAR_globegovcmsportlet_ a.events-title:visited
-	{
-	color: #32659A;
-	font-size: 14px;
-	font-weight: bold;
-	margin: 0px;
-	padding: 0px;
-	text-decoration: none;
-}
-
-#column-4 .portlet-boundary_commoneventsportlet_WAR_globegovcmsportlet_ a.events-title:hover
-	{
-	color: Black;
-}
-
-#column-4 .portlet-boundary_commoneventsportlet_WAR_globegovcmsportlet_ .events-date
-	{
-	color: #000000;
-	font-size: 12px;
-	font-weight: bold;
-	margin: 0px;
-	padding: 0px;
-}
-
-#column-4 .portlet-boundary_commoneventsportlet_WAR_globegovcmsportlet_ .archiveLink
-	{
-	margin-left: 12px
-}
-
-/* announcements for org page */
-#p_p_id_84_ {
-	background-color: #F2F2F2;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #E2E2E2;
-	margin-top: 30px;
-}
-
-#p_p_id_84_ h3 {
-	margin-top: -20px;
-}
-
-#p_p_id_84_ .aui-tabview-list {
-	border: 0px;
-}
-
-#p_p_id_84_ .announcements-image {
-	margin: 0px 12px;
-}
-
-#p_p_id_84_ .announcements-image img {
-	margin-right: 12px;
-}
-
-#p_p_id_84_ .announcements-title,#p_p_id_84_ a.announcements-title:link,#p_p_id_84_ a.announcements-title:visited
-	{
-	color: #32659A;
-	font-size: 14px;
-	font-weight: bold;
-	margin: 0px;
-	padding: 0px;
-	text-decoration: none;
-}
-
-#p_p_id_84_ a.announcements-title:hover {
-	color: Black;
-}
-
-#p_p_id_84_ .announcements-date {
-	color: #000000;
-	font-size: 12px;
-	font-weight: bold;
-	margin: 0px;
-	padding: 0px;
-}
-
-#p_p_id_84_ .archiveLink {
-	margin-left: 12px
-}
-
-/* member listing portlet */
-.memberListingItem_image {
-	float: left;
-	margin-top: 0px;
-	margin-right: 7px;
-	width: 50px;
-	height: 50px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #FFFFFF;
-	padding: 0px;
-	background-color: #C2C5CC;
-}
-
-.membername {
-	font-weight: bold;
-}
-
-#column-2 .journal-content-article h2,#column-2 .journal-content-article h3
-	{
-	padding-top: 0;
-}
-
-.contentDate {
-	font-weight: bold;
-	font-size: 11px;
-	padding-bottom: 10px;
-}
-
-.testimonial-list-item {
-	clear: both;
-	padding-top: 20px;
-}
-
-.testimonial-list-image {
-	float: left;
-	width: 165px;
-}
-
-.testimonial-list-content {
-	float: right;
-	width: 782px;
-}
-
-.testimonial-list-blurb {
-	padding-bottom: 5px;
-}
-
-.testimonial-list-name {
-	padding-bottom: 5px;
-}
-
-.testimonial-list-title {
-	font-weight: bold;
-	font-size: 14px;
-}
-
-.testimonial-list-organization {
-	
+ * Table
+ */
+tr.nobg {
+	background: none !important;
 }
 
 .image_box,.image-wrapper {
 	display: table;
-	width: 1px;
-	float: right;
-	background: #d8e5f0;
-	padding: 10px;
-	/*margin: 10px;*/
-	/* width: 225px;*/
-	border: 1px solid #c2d4e5;
-	float: right;
-	clear: both;
-	margin: 0px 0px 10px 10px;
+	margin-bottom: 10px;
 }
 
 .image-wrapper-right {
 	float: right;
 	clear: both;
-	margin: 0px 0px 10px 10px;
+	margin: 0px 0px 20px 20px;
 }
 
 .image-wrapper-left {
 	float: left;
 	clear: both;
-	margin: 0px 10px 10px 0px;
+	margin: 0px 20px 20px 0px;
 }
 
-.unstyled,.cke_show_borders .unstyled {
+.image-wrapper-center {
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
+
+.unstyled {
 	background: none;
 	border-width: 0px;
 }
 
 .image-wrapper img {
-	margin: 10px;
+	border: 1px solid #4372ca;
 }
 
 .image-wrapper .image-caption {
@@ -715,168 +124,6 @@ a.small_text:link,a.small_text:visited,a.small_text:hover {
 	margin: 0px 10px 10px 10px !important;
 	padding: 0px;
 	color: #000000;
-	font-size: 13px;
+	font-size: 13px !important;
 	text-decoration: none;
-}
-
-.standard-right { /*width: 225px;*/
-	
-}
-
-/*SCIENCE AND EDUCATION*/
-#leftColumn-scienceEducationProgram {
-	float: left; /*margin-right: 23px;*/ /*width: 175px; */
-	width: 165px;
-	background-color: #F2F2F2;
-	padding: 12px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #E2E2E2;
-	min-height: 210px;
-	height: auto !important;
-	height: 210px;
-	margin-top: -15px;
-	margin-left: -4px;
-}
-
-#leftColumn-scienceEducationProgram h3 {
-	margin: 5px 0px 0px 0px;
-	padding: 0px;
-	/*border-style: solid; border-width: 0px 0px 1px 0px; border-color: #E2E2E2;*/
-}
-
-#leftColumn-scienceEducationProgram hr {
-	width: 100%;
-	color: #E2E2E2;
-	margin-right: -5px;
-	margin-left: -5px;
-	margin-top: 5px; /*width: 185px;*/
-	width: 175px;
-	background-color: #E2E2E2;
-	height: 1px;
-	border: 0;
-}
-
-#leftColumn-scienceEducationProgram ul {
-	margin: 0px;
-	padding: 0px;
-	list-style: none outside none;
-}
-
-#leftColumn-scienceEducationProgram li {
-	font-size: 12px;
-	color: black;
-	text-decoration: none;
-}
-
-#leftColumn-scienceEducationProgram a {
-	font-size: 12px; /*color:black;*/
-	text-decoration: none;
-}
-
-#leftColumn-scienceEducationProgram a.on {
-	font-weight: bold;
-}
-
-#leftColumn-scienceEducationProgram li {
-	margin: 0px;
-	padding: 4px 0px 5px 0px;
-}
-
-#rightColumn-scienceEducationProgram {
-	float: right; /*width: 740px;*/
-	width: 710px;
-	background-color: #F0F9FE; /*padding: 12px;*/
-	padding: 12px 12px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #AEBECD;
-	min-height: 210px;
-	height: auto !important;
-	height: 210px;
-}
-
-#rightColumn-scienceEducationProgram .introText {
-	font-weight: bold;
-	width: 680px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 5px;
-}
-
-#rightColumn-scienceEducationProgram .image-list {
-	font-weight: bold;
-	width: 680px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#rightColumn-scienceEducationProgram .image-list .image-box {
-	width: 136px;
-	float: left;
-	margin: 19px 0px 5px 0px;
-}
-
-#rightColumn-scienceEducationProgram .image-list .image-box .image {
-	/*margin-left: -82px;*/
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0px;
-	width: 72px;
-	height: 72px;
-	overflow: hidden;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #FFFFFF;
-	padding: 0px;
-	background-color: #C2C5CC;
-	clear: both;
-	margin-bottom: 2px;
-}
-
-#rightColumn-scienceEducationProgram .image-list .image-box .image img {
-	border: 0px;
-}
-
-#rightColumn-scienceEducationProgram .image-list .image-box a.subtitle {
-	/*color:black;*/
-	clear: both;
-	display: block;
-	text-align: center;
-	text-decoration: none;
-}
-
-#rightColumn-scienceEducationProgram .image-list .image-box .scienceedu-biology
-	{
-	background: url(../images/scienceedu-biology.jpg) no-repeat;
-	width: 72px;
-	height: 72px;
-}
-
-#rightColumn-scienceEducationProgram .image-list .image-box .scienceedu-soil
-	{
-	background: url(../images/scienceedu-soil.jpg) no-repeat;
-	width: 72px;
-	height: 72px;
-}
-
-#rightColumn-scienceEducationProgram .image-list .image-box .scienceedu-atmosphere
-	{
-	background: url(../images/scienceedu-atmosphere.jpg) no-repeat;
-	width: 72px;
-	height: 72px;
-}
-
-#rightColumn-scienceEducationProgram .image-list .image-box .scienceedu-hydrology
-	{
-	background: url(../images/scienceedu-hydrology.jpg) no-repeat;
-	width: 72px;
-	height: 72px;
-}
-
-#rightColumn-scienceEducationProgram .image-list .image-box .scienceedu-earth
-	{
-	background: url(../images/scienceedu-earth.jpg) no-repeat;
-	width: 72px;
-	height: 72px;
 }

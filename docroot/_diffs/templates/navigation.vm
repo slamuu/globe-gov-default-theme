@@ -5,6 +5,18 @@
 ## Last Edit Date: March 20, 2013
 ##
 
+#set ($selectedTopNavUUID = "")
+#set ($thisGroupId = $layout.getGroup().groupId)
+#if ($thisGroupId == 348830 || $thisGroupId == 349506)
+#set ($selectedTopNavUUID = "aed9bd9b-a52e-42f2-a0ed-9b1aa4a0b632")
+#end
+#if ($thisGroupId == 352961 || $thisGroupId == 348614 || $thisGroupId == 11865 || $thisGroupId == 355050 || $thisGroupId == 356160 || $thisGroupId == 356823 || $thisGroupId == 358135 || $thisGroupId == 359477 || $thisGroupId == 359520 || $thisGroupId == 2513517 || $thisGroupId == 2513581)
+#set ($selectedTopNavUUID = "79bd07cc-9ccf-4ccb-bbe2-5f7a7e5ebc3f")
+#end
+#if ($thisGroupId == 11337 || $thisGroupId == 367957 || $thisGroupId == 355810 || $thisGroupId == 357294 || $thisGroupId == 387188)
+#set ($selectedTopNavUUID = "12df4e28-ca6e-4d62-a534-55e13e7a9875")
+#end
+
 <nav class="$nav_css_class" id="navigation">
 
 	<div id="mainnav">

@@ -1,0 +1,30 @@
+
+<!--
+	<div class="debug">
+	layout: $layout<br><br>
+	CHILDREN:: layout.getChildren: $layout.getChildren()<br><br>
+	NAME: layout.getGroup().name: $layout.getGroup().name<br><br>
+	layout.getAncestors().size: $layout.getAncestors().size()<br><br>
+	layout.getGroup().getName(): $layout.getGroup().getName()<br><br>
+	layout.getGroup().getDescriptiveName(): $layout.getGroup().getDescriptiveName()<br><br>
+	layout.getGroup(): $layout.getGroup()<br><br>
+	layout.getGroup().getChildren(): $layout.getGroup().getChildren()<br><br>
+	layoutService.getLayout(layoutService.getDefaultPlid(layout.getGroup().groupId)): $layoutService.getLayout($layoutService.getDefaultPlid($layout.getGroup().groupId))<br><br>
+	layoutService.getLayout(layoutService.getDefaultPlid(layout.getGroup().groupId)).<b>CHILDREN</b>: $layoutService.getLayout($layoutService.getDefaultPlid($layout.getGroup().groupId)).getChildren()<br><br>
+	
+	GroupLocalService
+	portalUtil.getLayoutURL: $portalUtil.getLayoutURL($layout, $themeDisplay)<br><br>
+	layout.getAncestors(): $layout.getAncestors()<br><br>
+	layout.getGroup(): $layout.getGroup()<br><br>
+	layout.getGroup().isUser(): $layout.getGroup().isUser()<br>
+	layout.getGroup().isCommunity(): $layout.getGroup().isCommunity()<br>
+	layout.getGroup().isOrganization(): $layout.getGroup().isOrganization()<br><br>
+	layout.getGroup().getFriendlyURL(): $layout.getGroup().getFriendlyURL()<br><br>
+	layout.getGroup().getPathFriendlyURL(): $layout.getGroup().getPathFriendlyURL(false, $themeDisplay)<br><br>
+	$layoutService.getLayout($layoutService.getDefaultPlid($layout.getGroup().groupId, false))<br><br>
+
+	portalUtil.getLayoutURL: $portalUtil.getLayoutURL($layout, $themeDisplay)<br><br>	
+	#set($left_nav_items = {})
+	left_nav_items($left_nav_items.size()): $left_nav_items<br><br>
+	</div>
+-->

@@ -82,18 +82,19 @@ tr.nobg {
 .image_box,.image-wrapper {
 	display: table;
 	margin-bottom: 10px;
+	width: 1px;
 }
 
 .image-wrapper-right {
 	float: right;
 	clear: both;
-	margin: 0px 0px 10px 10px;
+	margin: 0px 0px 20px 20px;
 }
 
 .image-wrapper-left {
 	float: left;
 	clear: both;
-	margin: 0px 10px 10px 0px;
+	margin: 0px 20px 20px 0px;
 }
 
 .image-wrapper-center {
@@ -108,7 +109,7 @@ tr.nobg {
 }
 
 .image-wrapper img {
-	border: 1px solid #c2d4e5;
+	border: 1px solid #4372ca;
 }
 
 .image-wrapper .image-caption {
@@ -135,4 +136,15 @@ tr.nobg {
 	width: 990px;
 	margin: auto;
 	color: #5a6871;
+}
+
+/*
+ * Terms of Use - Remove
+ */
+#portlet_privacy-policy header {
+	display: none;
+}
+
+#portlet_privacy-policy ul {
+	margin-left: 20px !important;
 }

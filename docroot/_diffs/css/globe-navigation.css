@@ -1,6 +1,10 @@
 /*
  * menu - navigation
  */
+#navigation .aui-dd-drop a {
+	cursor: pointer;
+}
+
 #navigation {
 	clear: both;
 	width: 990px;
@@ -33,7 +37,7 @@
 }
 
 #navigation li a.on:link,#navigation  li a.on:visited,#navigation li a.on:hover
-{
+	{
 	color: #000;
 }
 
@@ -71,10 +75,6 @@
 
 .ie7 #navigation a {
 	padding: 4px 15px;
-}
-
-#navigation .aui-dd-drop a {
-	cursor: move;
 }
 
 #navigation .selected a,#navigation a:hover,#navigation a:focus,#navigation .child-menu li a,#navigation .aui-dd-dragging,.lfr-navigation-proxy
@@ -121,7 +121,7 @@
  */
 #navigation ul li ul.child-menu {
 	display: none;
-	width: 361px;
+	width: 344px;
 	border: 5px solid #fff;
 	overflow: hidden;
 	font-size: 13px !important;
@@ -137,6 +137,7 @@ ul.subnav .subnav_col_left {
 	width: 170px;
 	border-right: 1px solid #fff;
 	overflow: hidden;
+	padding-bottom: 20px;
 }
 
 ul.subnav .subnav_col {

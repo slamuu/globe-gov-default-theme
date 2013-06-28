@@ -1,3 +1,20 @@
+.portlet-column-content {
+	padding: 0;
+}
+
+div.columns-3 #column-2 {
+	padding: 0 10px;
+}
+
+.aui-w1-5,.aui-w20 {
+	padding-left: 20px;
+}
+
+/* layout update for organization */
+.aui-w3-5,.aui-w60 {
+	width: 55%;
+}
+
 /*
  * second-level
  */
@@ -119,7 +136,6 @@
 	color: #707D86 !important;
 }
 */
-
 #level2PageContentBox #sidebar ul.menu_level2 li a.active_cat {
 	font-weight: bold;
 }
@@ -128,17 +144,15 @@
 	{
 	margin-left: 25px;
 }
-
-
-
-#column-2.aui-w60 { /*width: 385px;*/
+/*
+#column-2.aui-w60 {\
 	width: 400px;
 }
 
 .groupType_User #p_p_id_116_ {
 	width: 390px;
 }
-
+*/
 .groupType_User #column-1 .summary-container {
 	width: 175px;
 }
@@ -188,7 +202,7 @@
 	{
 	background: none repeat scroll 0 0 #FFFFFF !important;
 }
-
+/*
 #p_p_id_mygroups_WAR_globegovmygroupsportlet_ {
 	clear: both;
 	margin-bottom: 10px;
@@ -198,7 +212,7 @@
 	margin-top: 20px;
 	clear: both;
 }
-
+*/
 #content_repeat {
 	-moz-box-shadow: 0 0 10px #888888 inset;
 	-webkit-box-shadow: 0 0 10px #888888 inset;
@@ -370,18 +384,16 @@
 	margin-left: 12px
 }
 
-/* announcements for org page */
+/* announcements for org page 
 #p_p_id_84_ {
 	background-color: #F2F2F2;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #E2E2E2;
-	/*margin-top:30px;*/
 }
 
 #p_p_id_84_ h3 {
 	margin-top: -20px;
-	/*margin-top:-34px;*/
 }
 
 .aui-w60 #p_p_id_84_ h3 {
@@ -424,7 +436,7 @@
 
 #p_p_id_84_ .archiveLink {
 	margin-left: 12px
-}
+}*/
 
 /* member listing portlet */
 .memberListingItem_image {
@@ -451,8 +463,9 @@
 
 .contentDate {
 	font-weight: bold;
-	font-size: 16px;
-	color: grey;
+	font-size: 12px;
+	color: #8a98b3;
+	margin: -10px 0 20px 0;
 }
 
 .testimonial-list-item {
@@ -494,7 +507,7 @@
 .testimonial-list-organization {
 	
 }
-
+/*
 #p_p_id_116_ {
 	margin: 0 15px;
 }
@@ -508,7 +521,7 @@
 	margin-left: 0px;
 	margin-right: 0px;
 }
-
+*/
 .mynetworkListingItem {
 	margin-bottom: 10px;
 	text-align: center;
@@ -530,7 +543,6 @@
 .social-networking-summary-wrapper {
 	text-align: center;
 }*/
-
 #subOrgs tr.odd {
 	background: none !important;
 }
@@ -758,4 +770,32 @@ ul.tabs li.active_tab {
 
 ul.tabs li.active_tab a {
 	color: #000;
+}
+
+/*
+ * Org Overview
+ */
+#globe-layout-org-overview #column-2 {
+	width: 385px;
+}
+
+/*
+ * My Page Profile
+ */
+#globe_layout_my_page {
+	width: 940px;
+	margin-left: -20px;
+}
+
+#globe_layout_my_page #column-1 {
+	width: 170px;
+}
+
+#globe_layout_my_page #column-2 {
+	width: 415px;
+	padding: 0 20px;
+}
+
+#globe_layout_my_page #column-3 {
+	width: 325px;
 }

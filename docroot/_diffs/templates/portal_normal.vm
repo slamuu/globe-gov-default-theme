@@ -64,9 +64,6 @@ $theme.include($body_top_include)
 		#end
 
 		</div>
-	
-		<br clear="all">
-	
 	</div>
 	
 	<div id="media_row">
@@ -108,10 +105,6 @@ $theme.include($body_top_include)
 </footer><!--- /footer --->
 
 $theme.include($body_bottom_include)
-
-<script type="text/javascript">
-	AUI().use('viewport');
-</script>
 
 </body>
 

@@ -41,7 +41,7 @@ body {
 	background: url(../images/layout_990/content_bg_vglow.png) no-repeat;
 	margin: 0 auto 5px auto;
 	padding: 0 10px 14px 10px;
-	min-height: 650px;
+	min-height: 500px;
 }
 
 /*
@@ -116,9 +116,9 @@ body {
  * Sidebar
  */
 #sidebar {
-	width: 174px;
+	width: 164px;
 	float: left;
-	padding: 5px 20px 5px 0;
+	padding: 5px 30px 5px 0;
 	margin-top: 30px;
 	font-size: 10pt;
 	font-weight: bold;
@@ -145,7 +145,7 @@ body {
 /* One Wide White Column general style */
 #one_col_top {
 	background: url(../images/layout/one_col_top.png) top left no-repeat;
-	margin: 0px;
+	margin: 0px 0px 0px -4px;
 	height: 9px;
 }
 
@@ -153,13 +153,13 @@ body {
 	background: url(../images/layout/one_col_bottom.png) bottom left
 		no-repeat;
 	height: 9px;
-	margin: 0px;
+	margin: 0px 0px 0px -4px;
 }
 
 #one_col_middle {
 	background: url(../images/layout/one_col_middle.png) top left repeat-y;
 	padding: 10px 30px;
-	margin: 0px;
+	margin: 0px 0px 0px -4px;
 	min-height: 550px;
 }
 

@@ -33,18 +33,18 @@ a:hover {
 h1 {
 	color: #3B7FC7;
 	font-size: 21px;
-	margin: 0px;
-	padding: 4px 0px 13px 0px;
+	margin: 0;
+	padding: 12px 0 10px 10px;
 }
 
 h2 {
-	color: #000000;
+	color: #af510b;
 	font-size: 19px;
 }
 
 h3 {
-	color: #000000;
-	font-size: 14px;
+	color: #afafaf;
+	font-size: 17px;
 }
 
 h3 a:link,h3 a:visited {
@@ -58,8 +58,8 @@ h3 a:hover {
 }
 
 h4 {
-	color: #000000;
-	font-size: 13px;
+	color: #3b7fc7;
+	font-size: 16px;
 }
 
 h4 a:link,h4 a:visited {

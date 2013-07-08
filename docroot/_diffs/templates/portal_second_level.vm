@@ -71,13 +71,9 @@
 
 			$theme.wrapPortlet("portlet.vm", $content_include)
 		#end
-
-		##if ($left_nav_items.size() > 0)	
-		##</div>
-		##end
 		
-		<!--- don't delete this br --->
-		<br clear="all" />
+		##<!--- don't delete this br --->
+		##<br clear="all" />
 		
 		#if ($layout.getAncestors().size() == 2 || $layout.getGroup().name != "Guest")
 		</div><!--- /article_container --->

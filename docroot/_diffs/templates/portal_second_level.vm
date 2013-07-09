@@ -37,6 +37,11 @@
 			#if ($layout.getAncestors().size() >= 2 || $layout.getGroup().name != "Guest")
 	 		<div id="article_container">
 	 		#end
+
+			## Test is left_nav_items exists
+	 		#if(! $left_nav_items)
+	 			#set($left_nav_items = {})
+	 		#end
 	 	
 			#if ($left_nav_items.size() > 0)
 	

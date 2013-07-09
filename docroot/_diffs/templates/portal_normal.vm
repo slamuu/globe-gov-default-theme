@@ -11,7 +11,7 @@
 <html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$w3c_language_id">
 
 <head>
-	<meta name="viewport" content="initial-scale=0.75" />
+	<meta name="viewport" content="initial-scale=0.85" />
 	<title>$the_title - $company_name</title>
 
 	$theme.include($top_head_include)

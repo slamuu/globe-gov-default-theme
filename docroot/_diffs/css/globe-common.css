@@ -37,14 +37,24 @@ h1 {
 	padding: 12px 0 10px 10px;
 }
 
+/* Page Subtitle Title */
 h2 {
 	color: #af510b;
-	font-size: 19px;
+	font-size: 17px;
+	margin: 0;
 }
 
+/* Section Header */
 h3 {
-	color: #afafaf;
-	font-size: 17px;
+	/* color: #3b7fc7; */
+	color: #000;
+	font-size: 15px;
+}
+
+/* Page Sub-Subtitle */
+h4 {
+	color: #a9a9a9;
+	font-size: 15px;
 }
 
 h3 a:link,h3 a:visited {
@@ -57,11 +67,6 @@ h3 a:hover {
 	text-decoration: underline;
 }
 
-h4 {
-	color: #3b7fc7;
-	font-size: 16px;
-}
-
 h4 a:link,h4 a:visited {
 	color: #32659A;
 	font-size: 13px;
@@ -70,6 +75,12 @@ h4 a:link,h4 a:visited {
 
 h4 a:hover {
 	text-decoration: underline;
+}
+
+.metadata {
+	font-weight: bold;
+	font-size: 13px;
+	color: #a9a9a9;
 }
 
 /*

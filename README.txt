@@ -1,6 +1,4 @@
 Lead Developer: Alex Kim
-Module Number: 4
-Last Updated: 06/25/2013
 
 ********************************************** width of github ********************************************************
 
@@ -14,4 +12,8 @@ Change Log:
 06/25/2013 v1 (Alex): Adding missing images and favicon icon.
 06/26/2013 v2 (Alex): Various theming issue fixes.
 06/28/2013 v3 (Alex): Fixes theming issues and no visible items in sidebar issues.
-06/28/2013 v4 (Alex): CSS Updates for ckeditor
+07/09/2013 v4 (Alex): CSS Updates for ckeditor
+07/10/2013 v5 (Alex): Set iPad frame to 75%
+07/10/2013 v6 (Alex): Updates for ckeditor h1, h2, h3, h4
+07/12/2013 v7 (Alex): Updates for ckeditor h1, h2, h3, h4
+07/15/2013 v8 (Alex): Fixes using the home theme on the home page for multiple languages.

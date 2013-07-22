@@ -17,3 +17,4 @@ Change Log:
 07/10/2013 v6 (Alex): Updates for ckeditor h1, h2, h3, h4
 07/12/2013 v7 (Alex): Updates for ckeditor h1, h2, h3, h4
 07/15/2013 v8 (Alex): Fixes using the home theme on the home page for multiple languages.
+07/22/2013 v9 (Alex): Fixes axosoft bug #1505

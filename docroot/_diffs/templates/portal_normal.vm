@@ -8,11 +8,13 @@
 
 #parse ($init)
 
-#if($themeDisplay.getLanguageId().substring(0,2) == "en")
-	#set ($temp_url = "/home")
+## Check if url is homepage
+#if (($themeDisplay.getScopeGroup().getName() == "Guest") && ($layout.getLayoutId() == 1) && ($layout.getParentLayoutId() == 0))
+	#set ($isHomepage = "true")
 #else
-	#set ($temp_url = "/" + $themeDisplay.getLanguageId().substring(0,2) + "/home")
+	#set ($isHomepage = "false")
 #end
+
 
 <html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$themeDisplay.getLanguageId()">
 
@@ -22,7 +24,6 @@
 
 	$theme.include($top_head_include)
  	
-## 	<script src="http://cdn.alloyui.com/2.0.0pr3/aui/aui-min.js"></script>
 </head>
 
 <body class="$css_class">
@@ -36,7 +37,7 @@ $theme.include($body_top_include)
 
 <header id="banner" role="banner">
 
-	#if ($themeDisplay.getURLCurrent() == $temp_url)
+	#if ($isHomepage == "true")
 		$taglibLiferay.runtime('bannerhomeportlet_WAR_globegovhomeportlet', '', '')
 	#else
 		$taglibLiferay.runtime('bannerportalportlet_WAR_globegovhomeportlet', '', '')
@@ -63,7 +64,7 @@ $theme.include($body_top_include)
 	<div id="wrapper-content">
 		<div id="content-wrapper">
 				
-		#if ($themeDisplay.getURLCurrent() == $temp_url)
+		#if ($isHomepage == "true")
 			#parse ("$full_templates_path/portal_home.vm")
 		#else
 			#parse ("$full_templates_path/portal_second_level.vm")

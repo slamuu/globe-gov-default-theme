@@ -44,7 +44,8 @@ h2 {
 
 /* Section Header */
 h3 {
-	color: #3B7FC7;
+	/* color: #3B7FC7; */
+	color: #000;
 	font-size: 15px;
 }
 

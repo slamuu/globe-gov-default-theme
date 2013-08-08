@@ -134,11 +134,10 @@ div.columns-2 #column-1 {
 	color: #000 !important; /*color: #AF510B !important;*/
 }
 
-/*
-#level2PageContentBox #sidebar ul.menu_level2 li a {
-	color: #707D86 !important;
+#level2PageContentBox #sidebar ul.menu_level2 li {
+	margin: 10px 0 !important;
 }
-*/
+
 #level2PageContentBox #sidebar ul.menu_level2 li a.active_cat {
 	font-weight: bold;
 }
@@ -147,15 +146,7 @@ div.columns-2 #column-1 {
 	{
 	margin-left: 25px;
 }
-/*
-#column-2.aui-w60 {\
-	width: 400px;
-}
 
-.groupType_User #p_p_id_116_ {
-	width: 390px;
-}
-*/
 .groupType_User #column-1 .summary-container {
 	width: 175px;
 }

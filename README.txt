@@ -19,3 +19,4 @@ Change Log:
 07/15/2013 v8 (Alex): Fixes using the home theme on the home page for multiple languages.
 07/22/2013 v9 (Alex): Fixes axosoft bug #1505
 07/24/2013 v10 (Alex): Changes Section header to #000
+07/31/2013 v11 (Alex): Bug #1509, Enhancement #1056, #1057, #1066, #1068

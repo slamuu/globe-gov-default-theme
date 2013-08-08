@@ -23,76 +23,70 @@
 
 #foreach ($nav_item in $left_nav_items)
 	#set ($showChildren_l1 = 0)
-	
+		
 	#if (!$nav_item.hidden)
-	#set ($showChildren_l0 = 1)
+		#set ($showChildren_l0 = 1)
 	<li class="level1"><a href="$portalUtil.getLayoutURL($nav_item, $themeDisplay, true)" 		
-	#if ($layout.uuid == $nav_item.uuid)
+		#if ($layout.uuid == $nav_item.uuid)
 	class="active_cat"
-	#set ($showChildren_l1 = 1)
-	#else
-		#foreach ($parent in $layout.getAncestors())
-			#if ($parent.uuid == $nav_item.uuid)
-			class="active_cat"
 			#set ($showChildren_l1 = 1)
+		#else
+			#foreach ($parent in $layout.getAncestors())
+				#if ($parent.uuid == $nav_item.uuid)
+					#set ($showChildren_l1 = 1)
+				#end
 			#end
 		#end
-	#end
 	 $nav_item.getTarget() >$nav_item.getHTMLTitle($themeDisplay.getLanguageId())</a>
 	
-	#if ($nav_item.hasChildren() && $showChildren_l1 == 1)
+		#if ($nav_item.hasChildren() && $showChildren_l1 == 1)
 		<ul class="menu_level2">
-		#foreach ($nav_item_l2 in $nav_item.getChildren())
-			#set ($showChildren_l2 = 0)
-			#if (!$nav_item_l2.hidden)
+			#foreach ($nav_item_l2 in $nav_item.getChildren())
+				#set ($showChildren_l2 = 0)
+				#if (!$nav_item_l2.hidden)
 				<li><a href="$portalUtil.getLayoutURL($nav_item_l2, $themeDisplay, true)" 
-
-				#if ($layout.uuid == $nav_item_l2.uuid)
+					#if ($layout.uuid == $nav_item_l2.uuid)
 				class="active_cat"
-				#set ($showChildren_l2 = 1)
-				#else
-					#foreach ($parent in $layout.getAncestors())
-						#if ($parent.uuid == $nav_item_l2.uuid)
-						class="active_cat"
 						#set ($showChildren_l2 = 1)
+					#else
+						#foreach ($parent in $layout.getAncestors())
+							#if ($parent.uuid == $nav_item_l2.uuid)
+								#set ($showChildren_l2 = 1)
+							#end
 						#end
 					#end
-				#end
 				$nav_item_l2.getTarget()>$nav_item_l2.getHTMLTitle($themeDisplay.getLanguageId())</a>
 				
 				
-				#if ($nav_item_l2.hasChildren() && $showChildren_l2 == 1)
+					#if ($nav_item_l2.hasChildren() && $showChildren_l2 == 1)
 				
 					<ul class="menu_level3">
-					#foreach ($nav_item_l3 in $nav_item_l2.getChildren())
-						#set ($showChildren_l3 = 0)
-						#if (!$nav_item_l3.hidden)
+						#foreach ($nav_item_l3 in $nav_item_l2.getChildren())
+							#set ($showChildren_l3 = 0)
+							#if (!$nav_item_l3.hidden)
 							<li><a href="$portalUtil.getLayoutURL($nav_item_l3, $themeDisplay, true)" 
 
-							#if ($layout.uuid == $nav_item_l3.uuid)
+								#if ($layout.uuid == $nav_item_l3.uuid)
 							class="active_cat"
-							#set ($showChildren_l3 = 1)
-							#else
-								#foreach ($parent in $layout.getAncestors())
-									#if ($parent.uuid == $nav_item_l3.uuid)
-									class="active_cat"
 									#set ($showChildren_l3 = 1)
+								#else
+									#foreach ($parent in $layout.getAncestors())
+										#if ($parent.uuid == $nav_item_l3.uuid)
+											#set ($showChildren_l3 = 1)
+										#end
 									#end
 								#end
-							#end
 							$nav_item_l3.getTarget()>$nav_item_l3.getHTMLTitle($themeDisplay.getLanguageId())</a></li>
+							#end			
 						#end			
-					#end			
 					</ul>
-				#end
-				
-				
-				
+					#end
+								
 				</li>
+				#end			
 			#end			
-		#end			
 		</ul>
-	#end
+		#end
 	 
 	</li>	
 	#end		

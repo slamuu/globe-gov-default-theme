@@ -9,7 +9,7 @@
 #parse ($init)
 
 ## Check if url is homepage
-#if (($themeDisplay.getScopeGroup().getName() == "Guest") && ($layout.getLayoutId() == 1) && ($layout.getParentLayoutId() == 0))
+#if (($themeDisplay.getScopeGroup().getName() == "Guest") && ($layout.getLayoutId() == 1) && ($layout.getParentLayoutId() == 0) && $user.isAgreedToTermsOfUse() == "true")
 	#set ($isHomepage = "true")
 #else
 	#set ($isHomepage = "false")
@@ -63,7 +63,7 @@ $theme.include($body_top_include)
 	
 	<div id="wrapper-content">
 		<div id="content-wrapper">
-				
+		
 		#if ($isHomepage == "true")
 			#parse ("$full_templates_path/portal_home.vm")
 		#else
@@ -77,10 +77,11 @@ $theme.include($body_top_include)
 		<a href="/" class="small_text">The GLOBE Program</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/" class="small_text">Global Learning and Observations to Benefit the Environment</a>
 		   
 		<ul id="social_icons">
-			<li><a href="http://www.facebook.com/TheGLOBEProgram" class="facebook"><img src="$images_folder/footer/icon_fb.png" alt="Visit our Facebook Page" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>		
-		    <li><a href="http://twitter.com/GLOBEProgram/" class="twitter"><img src="$images_folder/footer/icon_twitter.png" alt="Follow us on Twitter" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>		    
-		    <li><a href="http://www.linkedin.com/company/the-globe-program/" class="twitter"><img src="$images_folder/footer/icon_linkedin.png" alt="LinkedIn" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>		    
-		    <li><a href="http://www.youtube.com/user/globeprogram/" class="youtube"><img src="$images_folder/footer/icon_youtube.png" alt="Watch GLOBE Tv" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>
+			<li><a href="http://www.facebook.com/TheGLOBEProgram" class="facebook" target="_new"><img src="$images_folder/footer/icon_fb.png" alt="Visit our Facebook Page" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>		
+		    <li><a href="http://twitter.com/GLOBEProgram/" class="twitter" target="_new"><img src="$images_folder/footer/icon_twitter.png" alt="Follow us on Twitter" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>		    
+		    <li><a href="http://www.linkedin.com/company/the-globe-program/" class="twitter" target="_new"><img src="$images_folder/footer/icon_linkedin.png" alt="LinkedIn" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>		    
+		    <li><a href="http://www.youtube.com/user/globeprogram/" class="youtube" target="_new"><img src="$images_folder/footer/icon_youtube.png" alt="Watch GLOBE Tv" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>
+		    <li><a href="http://www.pinterest.com/globeprogram/" class="pinterest" target="_new"><img src="$images_folder/footer/icon_pinterest.png" alt="Follow us on Pinterest" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>
 		</ul>
 	</div><!--- /media_row --->
 	
@@ -91,16 +92,23 @@ $theme.include($body_top_include)
     <div id="footer_content">
     
         <div id="sponsors_logos">
+			<div id="sponsors_text">Sponsored by:</div>
 			<ul id="sponsors_logos">			
 			    <li><a href="http://www.nasa.gov" title="National Aeronautics and Space Administration" target="_blank"><img src="$images_folder/footer/logo_nasa.png" alt="NASA" width="49" height="46" hspace="0" vspace="0" border="0"></a></li>
-			    <li><a href="http://www.noaa.gov" title="National Oceanic and Atmospheric Administration" target="_blank"><img src="$images_folder/footer/logo_noaa.png" alt="NOAA" width="40" height="46" hspace="0" vspace="0" border="0"></a></li>
 			    <li><a href="http://www.nsf.gov" title="National Science Foundation" target="_blank"><img src="$images_folder/footer/logo_nsf.png" alt="NOAA" width="46" height="46" hspace="0" vspace="0" border="0"></a></li>
+			</ul>
+		</div>
+		    
+        <div id="support_logos">
+			<div id="support_text">Supported by:</div>
+			<ul id="support_logos">			
+			    <li><a href="http://www.noaa.gov" title="National Oceanic and Atmospheric Administration" target="_blank"><img src="$images_folder/footer/logo_noaa.png" alt="NOAA" width="40" height="46" hspace="0" vspace="0" border="0"></a></li>
 			    <li><a href="http://www.state.gov" title="U.S. Department of State" target="_blank"><img src="$images_folder/footer/logo_usdos.png" alt="U.S. DOS" width="42" height="46" hspace="0" vspace="0" border="0"></a></li>
 			</ul>
 		</div>
 		
 		<div id="managed-by">
-			Managed by:
+			<div id="managed_text">Managed by:</div>
 			<a href="http://www.ucar.edu" title="University Corporation for Atmospheric Research" target="_blank"><img src="$images_folder/footer/logo_ucar.png" alt="UCAR Community Programs" width="181" height="46" hspace="0" vspace="0" border="0"></a>
 		</div>
 		

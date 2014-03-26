@@ -20,3 +20,5 @@ Change Log:
 07/22/2013 v9 (Alex): Fixes axosoft bug #1505
 07/24/2013 v10 (Alex): Changes Section header to #000
 07/31/2013 v11 (Alex): Bug #1509, Enhancement #1056, #1057, #1066, #1068
+12/17/2013 v12 (Alex): Fix typo in important field for nav. Added flowplayer to library.
+03/26/2014 v13 (Alex): Fixed Journal Article CSS to remove grey border Bug #1575

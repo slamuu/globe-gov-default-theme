@@ -81,6 +81,7 @@ $theme.include($body_top_include)
 		   
 		<ul id="social_icons">
 			<li><a href="http://www.facebook.com/TheGLOBEProgram" class="facebook" target="_new"><img src="$images_folder/footer/icon_fb.png" alt="Visit our Facebook Page" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>		
+		    <li><a href="http://instagram.com/globeprogram/" class="instagram" target="_new"><img src="$images_folder/footer/icon_instagram.png" alt="Follow us on Instagram" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>		    
 		    <li><a href="http://twitter.com/GLOBEProgram/" class="twitter" target="_new"><img src="$images_folder/footer/icon_twitter.png" alt="Follow us on Twitter" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>		    
 		    <li><a href="http://www.linkedin.com/company/the-globe-program/" class="twitter" target="_new"><img src="$images_folder/footer/icon_linkedin.png" alt="LinkedIn" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>		    
 		    <li><a href="http://www.youtube.com/user/globeprogram/" class="youtube" target="_new"><img src="$images_folder/footer/icon_youtube.png" alt="Watch GLOBE Tv" width="24" height="24" hspace="0" vspace="0" border="0"></a></li>

@@ -23,3 +23,4 @@ Change Log:
 12/17/2013 v12 (Alex): Fix typo in important field for nav. Added flowplayer to library.
 03/26/2014 v13 (Alex): Fixed Journal Article CSS to remove grey border Bug #1575
 05/03/2014 v14 (Alex): Add Instagram Icon and Link to footer, Enhancement #1287
+06/17/2014 v15 (Alex): Fixing bug with Flow Player SWF File

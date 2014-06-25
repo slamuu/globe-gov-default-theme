@@ -3,7 +3,7 @@
   
   $(function() {
     var videos = $('.video-container');
-    var swfpath = '/globe-gov-default-theme/flowplayer/flowplayer-3.2.12.swf';
+    var swfpath = '/globe-gov-default-theme/flowplayer/flowplayer-3.2.18.swf';
     
     if (videos.length) {
       videos.each(function(i,v) {

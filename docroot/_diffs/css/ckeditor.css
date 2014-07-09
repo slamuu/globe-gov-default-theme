@@ -43,8 +43,7 @@ h2 {
 }
 
 /* Section Header */
-h3 {
-	/* color: #3B7FC7; */
+h3 { /* color: #3B7FC7; */
 	color: #000;
 	font-size: 15px;
 }
@@ -66,7 +65,6 @@ h4 {
 	font-size: 12px;
 	color: #a9a9a9;
 }
-
 
 /*
  * Table
@@ -123,3 +121,58 @@ tr.nobg {
 	font-size: 13px !important;
 	text-decoration: none;
 }
+
+img.video-container {
+	background-image: url('../images/video-placeholder.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: 1px solid #a9a9a9;
+	width: 180px;
+	height: 180px;
+	display: table;
+}
+
+.video-wrapper {
+	clear: both;
+}
+
+.video-wrapper-center .video-caption,.video-wrapper-center .video-description,.styled .video-caption,.styled .video-description,.unstyled .video-caption,.unstyled .video-description
+	{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.video-wrapper-right .video-caption,.video-wrapper-right .video-description
+	{
+	float: right;
+	'
+}
+
+.video-caption,.video-description {
+	white-space: normal; '
+	clear: both; '
+	width: 500px;
+}
+
+.video-wrapper-left .video-container {
+	float: left;
+	margin: 0px;
+}
+
+.video-wrapper-center .video-container { '
+	margin-left: auto; '
+	margin-right: auto; '
+	float: none;
+}
+
+.video-wrapper-right .video-container { '
+	float: right; '
+	margin-right: 0px;
+}
+
+.styled .video-container,.unstyled .video-container { '
+	margin-left: auto; '
+	margin-right: auto; '
+	float: none;
+}
+'

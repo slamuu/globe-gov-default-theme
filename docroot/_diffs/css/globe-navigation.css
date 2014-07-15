@@ -224,3 +224,44 @@ ul.subnav .subnav_col {
 	margin-left: -15px;
 	background: url('../images/navigation/search_arrow.png') no-repeat;
 }
+
+/* NEW Search */
+
+#search_result_layout {
+	width: 960px;
+	min-height: 100px;
+	clear: both;
+}
+
+#search_left_box {
+	width: 700px;
+	float: left;
+}
+
+#search_left_box #search-tabs {
+}
+
+#search_left_box .tab-content {
+	overflow: auto;
+	position: absolute;
+	top: 90px;
+	border: 1px solid #ddd;
+	width: 670px;
+	padding: 10px;
+}
+
+#search_left_box .nav-tabs>li>a {
+	padding-left: 6px;
+	padding-right: 6px;	
+}
+
+#search_left_box .search_nav li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+#search_right_box {
+	width: 260px;
+	float: right;
+}

@@ -91,7 +91,9 @@
 
 			<form id="SubmitSearch" action="/search-results?p_p_id=3&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_3_struts_action=%2Fsearch%2Fsearch" method="post">
 				<label class="label" for="search"></label>
-				<input class="text" name="_3_keywords" type="Text" id="search" value="Search" onfocus="if(this.value=='Search'){this.value='';}" onblur="if(this.value==''){this.value='Search';}">
+				<input class="text" name="_3_keywords" type="Text" id="search" value="Search" onfocus="if(this.value=='Search'){this.value='';}" onblur="if(this.value==''){this.value='Search';}" maxlength = "50"
+
+				>
 			</form>
 
 			<div id="search_arrow"><a href="#" onclick="document.forms['SubmitSearch'].submit();return false;">&nbsp;&nbsp</a></div>

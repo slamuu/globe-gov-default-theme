@@ -275,6 +275,10 @@ ul.subnav .subnav_col {
 	margin-top: 31px;
 }
 
+#search_left_box .tab-content>.tab-pane {
+	min-height: 625px;
+}
+
 #search_left_box ul.nav-tabs {
 	position: absolute;
 	top: 0;

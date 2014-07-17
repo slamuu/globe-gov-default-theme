@@ -330,6 +330,11 @@ ul.subnav .subnav_col {
 
 #search_right_box #_user_search_display {
 	margin-bottom: 30px;
+	min-height: 200px;
+}
+
+#search_right_box #_organization_search_display {
+	min-height: 295px;
 }
 
 div#searchResultsBox img {

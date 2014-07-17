@@ -25,3 +25,4 @@ Change Log:
 05/03/2014 v14 (Alex): Add Instagram Icon and Link to footer, Enhancement #1287
 06/17/2014 v15 (Alex): Fixing bug with Flow Player SWF File
 07/09/2014 v15 (Alex): Fixing bug css with video in CKEditor, Enhancement #1303
+07/15/2014 v16 (Alex): Themeing for the new Search Results page

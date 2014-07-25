@@ -11,6 +11,7 @@ p,div,td,a {
 	font-size: 13px;
 	font-family: Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
+	margin: 0;
 }
 
 a:link,a:visited {
@@ -40,6 +41,7 @@ h2 {
 	color: #af510b;
 	font-size: 17px;
 	margin: 0;
+	line-height: 23px;
 }
 
 /* Section Header */

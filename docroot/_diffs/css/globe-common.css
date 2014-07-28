@@ -100,7 +100,6 @@ tr.nobg {
 .image_box,.image-wrapper {
 	display: table;
 	margin-bottom: 10px;
-	width: 1px;
 }
 
 .image-wrapper-right {

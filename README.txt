@@ -28,3 +28,4 @@ Change Log:
 07/15/2014 v16 (Alex): Themeing for the new Search Results page
 07/18/2014 v17 (Alex): Fixes input height from Bootstrap default of 30px to 20px
 07/24/2014 v18 (Alex): Fixes to site css
+07/28/2014 v19 (Daeyoung): fix image width in image-wrapper

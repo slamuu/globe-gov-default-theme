@@ -187,3 +187,10 @@ input[type="checkbox"] {
 #portlet_privacy-policy ul {
 	margin-left: 20px !important;
 }
+
+img {
+
+        max-width: inherit;
+
+        height: inherit;
+}

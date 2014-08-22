@@ -29,3 +29,5 @@ Change Log:
 07/18/2014 v17 (Alex): Fixes input height from Bootstrap default of 30px to 20px
 07/24/2014 v18 (Alex): Fixes to site css
 07/28/2014 v19 (Daeyoung): fix image width in image-wrapper and image gallery(Alex's fix)
+08/11/2014 v20 (Alex): Bug 1465. Fixes the table buttons to remove text and leave graphic
+08/22/2014 v21 (Alex): Bug 1767 IE 8 image fixed for map flags

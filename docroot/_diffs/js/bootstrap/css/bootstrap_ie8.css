@@ -1,0 +1,6 @@
+
+/* IE8 map flag fix */
+div.country_icon img {
+	width: 30px;
+	height: 23px;
+}

@@ -31,3 +31,5 @@ Change Log:
 07/28/2014 v19 (Daeyoung): fix image width in image-wrapper and image gallery(Alex's fix)
 08/11/2014 v20 (Alex): Bug 1465. Fixes the table buttons to remove text and leave graphic
 08/22/2014 v21 (Alex): Bug 1767 IE 8 image fixed for map flags
+08/27/2014 v22 (Alex): Bug 1773 Fixes to image-wrapper img tag to not display actual size of image.
+

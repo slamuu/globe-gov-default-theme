@@ -105,6 +105,7 @@ tr.nobg {
 
 .image-wrapper img {
 	border: 1px solid #4372ca;
+	max-width: 100%;
 }
 
 .image-wrapper .image-caption {

@@ -1,9 +1,11 @@
 /*
  * header
  */
-
 #header-content {
 	width: 990px;
 	margin: 0 auto;
 }
 
+div#language-login select {
+	height: 20px;
+}

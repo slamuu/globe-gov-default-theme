@@ -147,7 +147,7 @@ tr.nobg {
 	text-decoration: none;
 }
 
-select,input[type="file"] {
+input[type="file"] {
 	height: 20px !important;
 	width: inherit;
 	margin-bottom: 0;

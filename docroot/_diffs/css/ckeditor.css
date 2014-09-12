@@ -3,8 +3,8 @@
  */
 body {
 	/*font-family: "Myriad Pro", "Segoe UI", "Helvetica Neue", Arial, sans-serif;*/
-	font-family: Helvetica, Arial, sans-serif;
-	margin: 0px;
+	font: 62.5%/1.4 Arial,Helvetica,Verdana,sans-serif;
+	margin: 10px;
 }
 
 p,div,td,a {
@@ -12,6 +12,10 @@ p,div,td,a {
 	font-family: Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
+}
+
+p {
+	margin-bottom: 1em;
 }
 
 a:link,a:visited {
@@ -125,6 +129,23 @@ tr.nobg {
 	text-decoration: none;
 }
 
+figure.image {
+	margin-bottom: 10px;
+}
+
+figure.image img {
+	border: 1px solid #4372ca;
+	max-width: 100%;
+}
+
+figure.image figcaption {
+	color: #32659A;
+	font-size: 13px;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 10px;
+}
+
 img.video-container {
 	background-image: url('../images/video-placeholder.png');
 	background-position: center center;
@@ -145,15 +166,13 @@ img.video-container {
 	margin-right: auto;
 }
 
-.video-wrapper-right .video-caption,.video-wrapper-right .video-description
-	{
+.video-wrapper-right .video-caption,.video-wrapper-right .video-description {
 	float: right;
-	'
 }
 
 .video-caption,.video-description {
-	white-space: normal; '
-	clear: both; '
+	white-space: normal;
+	clear: both;
 	width: 500px;
 }
 
@@ -162,20 +181,55 @@ img.video-container {
 	margin: 0px;
 }
 
-.video-wrapper-center .video-container { '
-	margin-left: auto; '
-	margin-right: auto; '
+.video-wrapper-center .video-container {
+	margin-left: auto;
+	margin-right: auto;
 	float: none;
 }
 
-.video-wrapper-right .video-container { '
-	float: right; '
+.video-wrapper-right .video-container {
+	float: right;
 	margin-right: 0px;
 }
 
-.styled .video-container,.unstyled .video-container { '
-	margin-left: auto; '
-	margin-right: auto; '
+.styled .video-container,.unstyled .video-container {
+	margin-left: auto;
+	margin-right: auto;
 	float: none;
 }
-'
+
+
+/*
+ * CKEditor Simple Box
+ */
+.simplebox {
+    padding: 8px;
+    margin: 10px;
+    background: #eee;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 1px #fff inset, 0 -1px 0px #ccc inset;
+}
+.simplebox-title, .simplebox-content {
+    box-shadow: 0 1px 1px #ddd inset;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background: #fff;
+}
+.simplebox-title {
+    margin: 0 0 8px;
+    padding: 5px 8px;
+}
+.simplebox-content {
+    padding: 0 8px;
+}
+.simplebox.align-right {
+    float: right;
+}
+.simplebox.align-left {
+    float: left;
+}
+.simplebox.align-center {
+    margin-left: auto;
+    margin-right: auto;
+}

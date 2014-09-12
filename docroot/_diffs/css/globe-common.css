@@ -120,7 +120,8 @@ tr.nobg {
 	width: auto;
 }
 
-.unstyled {
+.unstyled,
+.unstyled img {
 	background: none;
 	border-width: 0px;
 }
@@ -145,6 +146,22 @@ tr.nobg {
 	color: #000000;
 	font-size: 13px !important;
 	text-decoration: none;
+}
+
+figure.image {
+	margin-bottom: 10px;
+}
+
+figure.image img {
+	border: 1px solid #4372ca;
+	max-width: 100%;
+}
+
+figure.image figcaption {
+	color: #32659A;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 10px;
 }
 
 input[type="file"] {

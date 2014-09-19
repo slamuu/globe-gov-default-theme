@@ -33,4 +33,5 @@ Change Log:
 08/22/2014 v21 (Alex): Bug 1767 IE 8 image fixed for map flags
 08/27/2014 v22 (Alex): Bug 1773 Fixes to image-wrapper img tag to not display actual size of image.
 09/05/2014 v23 (Alex): Bug 1728 Fixes ordering of children select box.
+09/19/2014 v24 (Alex): Enhancement 1425
 

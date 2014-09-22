@@ -120,11 +120,22 @@ $theme.include($body_top_include)
 		</div>
 		
 		<div id="managed-by">
+			<div id="managed-people">
+				NASA Official: Ming-Ying Wei<br /><br />
+				GLOBE Implementation Office<br/>
+				Director: Tony Murphy
+			</div>
+<!--		
 			<div id="managed_text">Managed by:</div>
 			<a href="http://www.ucar.edu" title="University Corporation for Atmospheric Research" target="_blank"><img src="$images_folder/footer/logo_ucar.png" alt="UCAR Community Programs" width="181" height="46" hspace="0" vspace="0" border="0"></a>
+-->
 		</div>
 		
         <div id="footer-links">
+			<div id="managed-people">
+				Site Currator:<br />
+				Nargess Memarasadeghi
+			</div>
         	<a href="/about-globe/policies/privacy-policy">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/contact-globe">Contact GLOBE</a>
         </div>
         
